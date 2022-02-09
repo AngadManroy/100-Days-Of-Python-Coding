@@ -1,5 +1,4 @@
-from dis import dis
-from os import system
+
 import random as r
 def print_hangman():
     print('''888                                                           
@@ -86,8 +85,8 @@ if __name__=="__main__":
 
     while not iscomplete:
         if lives == -1:
-            print("You Lose!")
-            system.exit(0)
+            print(f"You Lose! The correct word was {chosen_word}")
+            break
 
         guess = input("Guess a letter").lower()
         iscorrect=False

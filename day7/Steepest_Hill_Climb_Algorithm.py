@@ -1,4 +1,7 @@
 # Steepest Hill Climb with heureistic = +-n
+# Another version of the algorithm, difference being that instead of jumping to the first
+# child node with a better heuristic we compare all child nodes and the one with best heuristic is
+# is chosen to continue, rest are deleted to improve space complexity.
 import copy
 
 initial_state = [[],[],[],['B','C','D','A']]
